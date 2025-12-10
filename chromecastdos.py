@@ -12,7 +12,6 @@ while True:
 	for c in chromecasts:
 		cast = c
 		print(f'  "Killing "{cast.name}" on mDNS/host service {cast.cast_info.services} with UUID:{cast.uuid}')
-		#print(c.device.friendly_name)
 		try:
 			cast = c
 			cast.wait()
